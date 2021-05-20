@@ -1,13 +1,6 @@
-print('Введите время в секундах')
-time = int(input())
+print('Введите число n для суммы типа n + nn + nnn')
+n = int(input())
 
-sek = time % 60
+summ = n + int(str(n)*2) + int(str(n)*3)
 
-time = time // 60
-
-mins = time % 60
-
-time = time // 60
-
-print(time, mins, sek)
-
+print (summ)

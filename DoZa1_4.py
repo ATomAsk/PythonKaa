@@ -1,6 +1,10 @@
-print('Введите число n для суммы типа n + nn + nnn')
-n = int(input())
+print('Введите число')
+a = int(input())
+big = 0
+while a > 0:
+    b = a % 10
+    a = a // 10
+    if b > big:
+        big = b
 
-summ = n + int(str(n)*2) + int(str(n)*3)
-
-print (summ)
+print(big)

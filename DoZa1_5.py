@@ -1,10 +1,15 @@
-print('Введите число')
-a = int(input())
-big = 0
-while a > 0:
-    b = a % 10
-    a = a // 10
-    if b > big:
-        big = b
+print('Введите прибыль фирмы')
+profit = int(input())
 
-print(big)
+print('Введите издержки фирмы')
+costs = int(input())
+
+if (profit - costs) < 0:
+    print('Фирма в убытке')
+else:
+    print('Фирма получает прибыль. Рентабельность составляет', (profit - costs))
+
+print('Введите численность персонала фирмы')
+qntt = int(input())
+print('Прибыль фирмы на одного сотрудника составляет', (profit / qntt))
+

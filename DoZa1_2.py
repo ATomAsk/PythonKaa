@@ -1,7 +1,12 @@
-print('Введите число')
-numb = int(input())
+print('Введите время в секундах')
+time = int(input())
 
-print('Введите строку')
-word = str(input())
+sek = time % 60
 
-print(numb, word)
+time = time // 60
+
+mins = time % 60
+
+time = time // 60
+
+print(time, mins, sek)
